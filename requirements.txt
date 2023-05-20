@@ -1,0 +1,7 @@
+Flask==2.3.2
+numpy==1.23.5
+numpy==1.24.3
+opencv_python==4.7.0.72
+Requests==2.30.0
+tensorflow==2.12.0
+tensorflow_intel==2.12.0
