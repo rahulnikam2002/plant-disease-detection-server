@@ -2,8 +2,6 @@ import io
 from flask import Flask, request
 from tensorflow.keras.models import load_model
 import numpy as np
-from urllib.request import Request, urlopen
-import cv2
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.applications.vgg16 import preprocess_input
 import os
