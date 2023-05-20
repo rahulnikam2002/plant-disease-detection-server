@@ -1,5 +1,5 @@
 import io
-from flask import Flask, render_template, request
+from flask import Flask, request
 from tensorflow.keras.models import load_model
 import numpy as np
 from urllib.request import Request, urlopen
@@ -9,11 +9,10 @@ from tensorflow.keras.applications.vgg16 import preprocess_input
 import os
 import requests
 from tensorflow.keras.preprocessing import image
-from flask import request, jsonify
-from flask import Response
+from flask import request
+
 app = Flask(__name__)
 model = load_model('best_model.h5')
-target_img = os.path.join(os.getcwd(), 'static/images')
 
 plant = {
     0: "Apple___Apple_scab",
