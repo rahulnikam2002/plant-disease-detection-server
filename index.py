@@ -57,10 +57,11 @@ plant = {
 }
 
 
-
 @app.route('/')
 def index_view():
-    return render_template('index.html')
+    result = {'food': True}
+    return result
+
 
 def read_image(filename):
     response = requests.get(filename)
