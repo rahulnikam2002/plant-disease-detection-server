@@ -8,8 +8,10 @@ import os
 import requests
 from tensorflow.keras.preprocessing import image
 from flask import request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 model = load_model('best_model.h5')
 
 plant = {
