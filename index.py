@@ -87,7 +87,3 @@ def predict():
         return result
     else:
         return "Unable to read the file. Please check file extension"
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=8000)
